@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Halo, Saya [Halimatus Sa'diah]</h1>
+    </header>
+    <main>
+        <img src="Halimatus Sa'diah.jpeg" alt="Foto Profil Halimatus Sa'diah" width="150">
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa yang sedang belajar pengembangan web.</p>
+        </section>
+        <section>
+            <h2>Keahlian</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript Dasar</li>
+                <li>PHP Dasar</li>
+            </ul>
+            <h2>Hobby</h2>
+            <li>Main Tenis Meja</li>
+            <li>Mendengarkan Musik</li>
+        </ul>
+        </section>
+        <section>
+            <h2>Kontak</h2>
+            <p>Nomor: 081528449001</p>
+            <p>Email: <a href="mailto:atusatus019@gmail.com">atusatus019@gmail.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/atussss_ix" target="_blank">@atussss_ix</a></p>
+        </section>
+        <button onclick="toggleBiodata()">Tampilkan/Sembunyikan Biodata</button>
+    </main>
+    <script>
+        function toggleBiodata() {
+            var biodataSections = document.querySelectorAll('main section');
+            biodataSections.forEach(function(section) {
+                if (section.style.display === 'none') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
